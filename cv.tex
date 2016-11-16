@@ -1,0 +1,254 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{url}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+% Set your name here
+\def\name{Yuchong Pan}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+%\def\footerlink{http://jblevins.org/projects/cv-template/}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {economics, statistics, mathematics},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+
+\begin{minipage}{0.45\linewidth}
+  Dong Xian Huan He Yan 11-2 \\
+  Shaoxing, Zhejiang Province \\
+  China
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+    Phone: & (86) 138-6752-7534 \\
+    Email: & \href{mailto:yuchong.pan@alumni.ubc.ca}{\tt yuchong.pan@alumni.ubc.ca} \\
+    GitHub: & \url{https://github.com/yuchong-pan}
+  \end{tabular}
+\end{minipage}
+
+
+\section*{Personal}
+
+\begin{itemize}
+    \item Born on March 21, 1998.
+
+    \item People's Republic of China Citizen.
+\end{itemize}
+
+
+\section*{Education}
+
+\begin{itemize}
+  \item Bachelor of Science, University of British Columbia, 2017-- .\\
+  \emph{Having a gap year from September 2016 to August 2017.}
+
+  \item Shaoxing No. 1 High School, 2013--2016.
+\end{itemize}
+
+
+\section*{Employment}
+
+\begin{itemize}
+  \item Full-Stack Software Engineer (Internship), InitialView, 2016-- .\\
+  \emph{Working on front-end, back-end and mobile app.}
+\end{itemize}
+
+
+\section*{Projects}
+
+\begin{itemize}
+  \item Hack Search, 2016.\\
+  \emph{A field-specific, distributed search engine, available at }\url{https://github.com/joway/HackSearch}\emph{.}
+
+  \item Structure and Implementation of Computer Programs, 2016--.\\
+  \emph{Ongoing, available at }\url{https://github.com/yuchong-pan/sicp}\emph{.}
+
+  \item e-word, 2012--2013.\\
+  \emph{A software program for English vocabulary memorizing, available at }\url{http://pan.baidu.com/share/link?shareid=482913&uk=355930340}\emph{.}
+
+\end{itemize}
+
+
+\section*{Awards}
+
+\begin{itemize}
+  \item Top 9 and InnoSpring Award, HACKxFDU hackathon, 2016.
+
+  \item Outstanding International Student Award, University of British Columbia, 2016.
+
+  \item Silver Medal, International Olympiad in Informatics China Team Selection Competition, 2015.
+
+  \item Bronze Medal, Asia Pacific Informatics Olympiad, 2015.
+
+  \item Top 500, Google Code Jam, 2015.
+
+  \item Top 1000, Microsoft Beauty of Programming Challenge, 2015.
+
+  \item Top 1000, Microsoft Beauty of Programming Challenge, 2014.
+
+  \item First Prize, National Olympiad in Informatics in Provinces, 2014.
+
+  \item First Prize, National Olympiad in Informatics in Provinces, 2013.
+
+  \item Second Prize, National Olympiad in Informatics in Provinces, 2012.
+
+  \item Second Prize, National Olympiad in Informatics in Provinces, 2011.
+\end{itemize}
+
+
+\section*{Certificates}
+
+\begin{itemize}
+  \item Programming Ability Test (Advanced), Zhejiang University, Score 100/100, Rank 1/532.\\
+  \emph{The introduction to Programming Ability Test can be found at }\url{https://www.patest.cn/p/articles?id=50}\emph{.}
+
+  \item TOEFL iBT Test, Score 96/120.
+
+  \item IELTS Test, Score 7.0/9.0.
+
+  \item SAT Test, Reading 600/800, Mathematics 800/800, Writing 720/800, Essay 11/12.
+
+  \item Advanced Placement Exams, Calculus BC 5/5, Statistics 5/5, Computer Science A 5/5.
+\end{itemize}
+
+
+\section*{Experience}
+
+\begin{itemize}
+  \item Private English Tutor, 2016.
+
+  \item Propositional Person of ACM-ICPC Multi-University Training Contests, Hangzhou Dianzi University Online Judge System, 2014.
+
+  \item Student Lecturer of Olympiad in Informatics, Shaoxing No. 1 High School, 2013--2016.
+ 
+  \item Propositional Person of Olympiad in Informatics Training Contests, Shaoxing No. 1 High School, 2013--2016.
+\end{itemize}
+
+
+\section*{Community Service}
+
+\begin{itemize}
+  \item Volunteer Guide, Shaoxing Luxun Native Place, 2015.
+
+  \item Volunteer at the Radiological Department, Shaoxing People's Hospital, 2014.
+
+  \item Volunteer of Emergency Medical Treatment, Shaoxing People's Hospital, 2013.
+    
+\end{itemize}
+
+
+\section*{Languages}
+
+\begin{itemize}
+  \item C, C++, Java, Python, Pascal, Matlab, Octave, Racket, Scheme, Standard ML, Go, JavaScript, Swift, HTML, \LaTeX.
+  \item Chinese (Mandarin), English.
+\end{itemize}
+
+
+\section*{Skills}
+
+\begin{itemize}
+  \item Web Development: Django, Flask, HTML/CSS, JavaScript, D3.js.
+
+  \item App Development: Ionic, Cordova plugins, Delphi.
+
+  \item Infrastructure: Nginx, Unix, Docker.
+\end{itemize}
+
+\section*{MOOCs}
+
+\begin{itemize}
+  \item Machine Learning, Stanford University, Coursera.\\
+  \emph{Completed the course with a final grade of $100.0\%$.}
+
+  \item Programming Languages (Part A), University of Washington, Coursera.\\
+  \emph{Completed the course with a final grade of $98.6\%$.}
+
+  \item Programming Languages (Part B), University of Washington, Coursera.\\
+  \emph{Following the course in progress.}
+\end{itemize}
+
+
+\bigskip
+
+% Footer
+%\begin{center}
+%  \begin{footnotesize}
+%    Last updated: \today \\
+%    %\href{\footerlink}{\texttt{\footerlink}}
+%  \end{footnotesize}
+%\end{center}
+
+\end{document}
+
