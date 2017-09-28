@@ -1,0 +1,173 @@
+%-------------------------
+% Resume in Latex
+% Author : Yuchong Pan
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\awardSubItem}[2]{
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://ypan.me/}{\Large Yuchong Pan}} & Email : \href{mailto:panyuchong@gmail.com}{panyuchong@gmail.com}\\
+  \href{http://ypan.me/}{http://ypan.me} & Mobile : +1-604-782-7439 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of British Columbia}{Vancouver, BC}
+      {Bachelor of Science}{September 2017 -- May 2021 (Estimated)}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Sogou Inc.}{Beijing, China}
+      {Software Engineer Intern}{May 2017 - July 2017}
+      \resumeItemListStart
+        \resumeItem{Speech-Recognition \& OCR Proofreading Tools}
+          {Service for internal proofreading and testing of AI-Cloud services; using Bootstrap, Vue.js, Flask and Docker.}
+        \resumeItem{Fapiao (Invoice) Recognition Service}
+          {Service for Fapiao (invoice) format and content recognition; using Flask and scikit-image; based on Sogou AI-Cloud OCR API; primarily used for reimbursements of Sogou's financial department.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {hack.init()}{Shanghai, China}
+      {Co-Founder, Executive Board Member \& Director of Tech Department}{February 2017 - Present}
+      \resumeItemListStart
+        \resumeItem{hack.init() Hackathon 2017}
+          {China's premier youth hackathon; July 8 to 9 at ShanghaiTech University; website at \url{http://hackinit.io}; press coverage at \url{https://goo.gl/ZFX3Ni} and at \url{https://goo.gl/QXx8HM} (Simplified Chinese)}
+        \resumeItem{Management}
+          {As co-founder, I negotiated sponsorships from big corporations, including Google, Apple, Sogou and Wolfram, venture capitals and incubators. I also controled the direction of the event.}
+        \resumeItem{Technology}
+          {I built the website of the event, \url{http://hackinit.io}, including the front-end and the back-end. I am responsible for server maintenance.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {InitialView}{Beijing, China}
+      {Software Engineer Intern}{September 2016 -- Present}
+      \resumeItemListStart
+        \resumeItem{Web Development}
+          {I worked on the front-end, the back-end and server maintenance with the tech team. I built and maintained the company's homepage, booking system, student portal, admissions portal and video players.}
+        \resumeItem{App Development}
+          {I worked on the company's mobile apps on iOS and on Android.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Vox}
+      {A tool that redefines information structure for audio documents, with visualization and vertical search; based on Django; 1st place at i-Lab Hackathon 2017.}
+    \resumeSubItem{GitArt}
+      {A GitHub-like idea-sharing and collaboration platform for artists, based on Django; Best Hack of Innovation at Unique Hackday 2017.}
+    \resumeSubItem{Viso}
+      {A coding interview platform with Leap Motion anti-cheating system; based on Flask; 2nd place at HackNanjing 2017.}
+    \resumeSubItem{Aquatopia}
+      {A monitoring, alerting and visualization system for environmental data; based on Django; project at PennApps XV.}
+    \resumeSubItem{HackSearch}
+      {A vertical, distributed search engine; based on Golang architecture and D3.js; top 9 and InnoSpring award at HACKxFDU.}
+  \resumeSubHeadingListEnd
+
+%-----------Awards-----------------
+\section{Awards}
+  \resumeSubHeadingListStart
+    \awardSubItem{1st Place, Microsoft College Code Competition}{September 2017}
+    \awardSubItem{Outstanding International Student Award, University of British Columbia}{February 2017}
+    \awardSubItem{Silver Medal, China Team Selection Competition}{May 2015}
+    \awardSubItem{Bronze Medal, Asia Pacific Informatics Olympiad}{May 2015}
+    \awardSubItem{First Prize, National Olympiad in Informatics in Provinces}{November 2013}
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages}
+      {C++, Python, Racket, Go, JavaScript, MySQL, HTML, \LaTeX} \\
+    \resumeSubItem{Technologies}
+      {Django, Flask, Bootstrap, Vue.js, AngularJS, D3.js, Node.js, Marko.js, Ionic, Nginx, Redis, Docker} \\
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
