@@ -1,311 +1,225 @@
-% LaTeX Curriculum Vitae Template
-%
-% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
-% http://jblevins.org/projects/cv-template/
-%
-% You may use use this document as a template to create your own CV
-% and you may redistribute the source code freely. No attribution is
-% required in any resulting documents. I do ask that you please leave
-% this notice and the above URL in the source code if you choose to
-% redistribute this file.
+%--------------------------
+% Curriculum Vitae in Latex
+% Author : Yuchong Pan
+% License : MIT
+%--------------------------
 
-\documentclass[letterpaper]{article}
+\documentclass[margin,line]{res}
 
+\usepackage{pifont}
 \usepackage{hyperref}
-\usepackage{geometry}
-\usepackage{url}
+\usepackage[utf8x] {inputenc}
+\usepackage{lmodern,textcomp}
 
-% Comment the following lines to use the default Computer Modern font
-% instead of the Palatino font provided by the mathpazo package.
-% Remove the 'osf' bit if you don't like the old style figures.
-\usepackage[T1]{fontenc}
-\usepackage[sc,osf]{mathpazo}
+%\topmargin .5in
+%\oddsidemargin -.5in
+%\evensidemargin -.5in
+%\textwidth=6.0in
+ \textheight=9.0in
+%\itemsep=0in
+%\parsep=0in
+\usepackage{fancyhdr}
+%\topmargin=0in
+%\textheight=8.5in
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhf{}
+%\cfoot{\thepage}
+%\lfoot{\textit{\footnotesize Research Statement}}
+%\rfoot{{\footnotesize Curriculum Vitae, Yuchong Pan, \thepage}}
 
-% Set your name here
-\def\name{Yuchong Pan}
 
-% Replace this with a link to your CV if you like, or set it empty
-% (as in \def\footerlink{}) to remove the link in the footer:
-%\def\footerlink{http://jblevins.org/projects/cv-template/}
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
 
-% The following metadata will show up in the PDF properties
-\hypersetup{
-  colorlinks = true,
-  urlcolor = black,
-  pdfauthor = {\name},
-  pdfkeywords = {economics, statistics, mathematics},
-  pdftitle = {\name: Curriculum Vitae},
-  pdfsubject = {Curriculum Vitae},
-  pdfpagemode = UseNone
-}
-
-\geometry{
-  body={6.5in, 8.5in},
-  left=1.0in,
-  top=1.25in
-}
-
-% Customize page headers
-\pagestyle{myheadings}
-\markright{\name}
-\thispagestyle{empty}
-
-% Custom section fonts
-\usepackage{sectsty}
-\sectionfont{\rmfamily\mdseries\Large}
-\subsectionfont{\rmfamily\mdseries\itshape\large}
-
-% Other possible font commands include:
-% \ttfamily for teletype,
-% \sffamily for sans serif,
-% \bfseries for bold,
-% \scshape for small caps,
-% \normalsize, \large, \Large, \LARGE sizes.
-
-% Don't indent paragraphs.
-\setlength\parindent{0em}
-
-% Make lists without bullets
-\renewenvironment{itemize}{
-  \begin{list}{}{
-    \setlength{\leftmargin}{1.5em}
-  }
-}{
-  \end{list}
-}
 
 \begin{document}
 
-% Place name at left
-{\huge \name}
+\name{Yuchong Pan \vspace*{.1in}}
 
-% Alternatively, print name centered and bold:
-%\centerline{\huge \bf \name}
+\begin{resume}
 
-\vspace{0.25in}
+\section{\sc Contact Information}
 
-\begin{minipage}{0.45\linewidth}
-  Mailbox 954 \\
-  1935 Lower Mall \\
-  Vancouver, BC Canada V6T 1X1
-\end{minipage}
-\begin{minipage}{0.45\linewidth}
-  \begin{tabular}{ll}
-    Phone: & +1 (604) 782-7439 \\
-    Email: & \href{mailto:panyuchong@gmail.com}{\tt panyuchong@gmail.com} \\
-    GitHub: & \url{https://github.com/yuchong-pan}
-  \end{tabular}
-\end{minipage}
+\vspace{.05in}
+\begin{tabular}{p{2in}}
++1 (425) 502-1565 \\
+\href{mailto:panyuchong@gmail.com}{panyuchong@gmail.com}
+\href{http://ypan.me/}{http://ypan.me}
+\end{tabular}
 
 
-\section*{Personal}
+\section{\sc Research Interests}
+Programming languages and theoretical computer science -- especially algorithms, theory of computation, theory of complexity, graph theory and combinatorial optimization.
 
-\begin{itemize}
-    \item Born on March 21, 1998.
+\section{\sc Education}
 
-    \item People's Republic of China Citizen.
-\end{itemize}
+{\bf University of British Columbia}\\
+\vspace*{-.1in}
+\begin{list1}
+\item[] B.S., Computer Science and Mathematics, Combined Honours, expected 2021
+\end{list1}
 
 
-\section*{Education}
+\section{\sc Employment}
 
-\begin{itemize}
-  \item B.Sc., University of British Columbia, September 2017--May 2021 (Estimated).\\
-  \emph{Average: $92.9\%$. Took a gap year from May 2016 to August 2017.}
+{\bf Microsoft Corporation}\\
+\vspace*{-.1in}
+\begin{list1}
+\item[] Software Engineer Intern, 2019
+\item[] Software Engineer Intern, 2018
+\end{list1}
 
-  \item Shaoxing No.1 High School, September 2013--June 2016.
-\end{itemize}
+{\bf Sogou, Inc.}\\
+\vspace*{-.1in}
+\begin{list1}
+\item[] Software Engineer Intern, 2017
+\end{list1}
 
+{\bf InitialView}\\
+\vspace*{-.1in}
+\begin{list1}
+\item[] Software Engineer Intern, 2016--2017
+\end{list1}
 
-\section*{Employment}
 
-\begin{itemize}
-  \item Garage Intern, Microsoft, May 2018--August 2018.
+% \section{\sc Publications}
 
-  \item Software Engineer Intern, Sogou Inc., May 2017--July 2017.\\
-  \emph{Implemented internal speech-recognition and OCR proofreading tools. Implemented Fapiao (Invoice) Recognition Service based on Sogou AI-Cloud OCR API.}
+% J. Doe,  \textit{A simple piston problem in one dimension,}
+% submitted to Nonlinearity (May 1998).
 
-  \item Chief Technology Officer, Shanghai InnoCat Information Technology Co., Ltd., February 2017-- .\\
-  \emph{Founded in February 2017, InnoCat is the legal entity of hack.init() Hackathon, China League Hacking and a wide variety of hacker events. InnoCat aims to provide support and connections to hackathon organizers and nurture the hacker culture in China.}
 
-  \item Co-Founder, Executive Board Member \& Director of Tech Department, hack.init() Hackathon, February 2017-- .\\
-  \emph{hack.init() is China's premier youth hackathon in cooperation with ShanghaiTech University. I negotiated sponsorships from leading companies including Google, Apple, Sogou, Wolfram, and various Venture Capital and Incubator firms. I also developed and maintained the website of the event as director of Tech Department. Full introduction available at }\url{http://2017.hackinit.io}\emph{.}
+% A. Smith and J. Doe,  \textit{Semiclassical generalization
+% of the Darboux-Christoffel formula,} J. Math. Phys. \textbf{43}
+% (1996), no. 10, 4668-4680.
 
-  \item Software Engineer Intern, InitialView, September 2016-- .\\
-  \emph{Worked on front-end, back-end, mobile apps and server maintenance. Built and maintained InitialView's homepages, booking system, student portal, mobile apps, etc. Mentored other interns.}
-\end{itemize}
 
+% \section{\sc Conference \\ Talks}
 
-\section*{Projects}
+% \emph{A simple piston problem}, $95^ {th} $ Statistical Mechanics
+% Conference, Rutgers University. (May 1996)
 
-\begin{itemize}
-  \item Vox, June 2017.\\
-  \emph{A tool that redefines information structure for audio documents, with visualization and vertical search, available at }\url{https://github.com/yuchong-pan/vox}\emph{. I served as Chief Technology Officer and implemented the front-end of the project.}
+% \emph{A simple piston problem}, Workshop on Dynamical Systems and
+% Related Topics, University of Maryland, College Park. (March 1996)
 
-  \item GitArt, June 2017.\\
-  \emph{A GitHub-like idea-sharing and collaboration platform for artists and for story tellers based on Git, available at }\url{https://github.com/Yiluo-pHoton/GitArt}\emph{. I designed the entire architecture of the web server, implemented the back-end (GitHub-like API) and was involved in building the front-end.}
 
-  \item Viso, May 2017.\\
-  \emph{A coding interview platform with Leap Motion anti-cheating system, available at }\url{https://github.com/yuchong-pan/viso}\emph{. I designed the entire architecture of the web server and implemented the front-end and the back-end.}
+% \section{\sc Other Talks}
 
-  \item Aquatopia, January 2017.\\
-  \emph{A monitoring, alerting and visualization system for environmental data, available at }\url{https://devpost.com/software/aquatopia}\emph{ and at }\url{https://github.com/ShaolinZhang/aquatopia}\emph{. I designed the entire architecture of the web server and implemented the front-end and the back-end.}
+% \emph{The notorious piston problem and some recent results obtained
+% by averaging}, S�minaire interne, �cole normale sup�rieure de Lyon,
+% France. (December 1995)
 
-  \item Hack Search, October 2016.\\
-  \emph{A field-specific (vertical), distributed search engine, available at }\url{https://github.com/joway/HackSearch}\emph{. I designed and implemented the front-end.}
+% \emph{The notorious piston problem and some recent results obtained
+% by averaging}, Seminar in Nonlinear Systems, Stevens Institute of
+% Technology. (November 1995)
 
-  \item e-word, 2012--2013.\\
-  \emph{A software program for English vocabulary memorizing, available at }\url{http://pan.baidu.com/share/link?shareid=482913&uk=355930340}\emph{. I designed and implemented the entire program.}
+% \emph{Anosov's averaging theorem and an application}, Young Person's
+% Seminar, Time at work trimester on dynamical systems, Institut Henri
+% Poincar�, Paris, France. (July 1995)
 
-\end{itemize}
+% \emph{Ergodicity and averaging: A discussion of a theorem due to
+% Anosov and a possible application}, Dynamical System Seminar, New
+% York University. (March 1995)
 
 
-\section*{Awards}
 
-\begin{itemize}
-  \item 27th Place, North American Invitational Programming Contest 2018 Open Division (USA+Canada), March 2018.
+% \newpage
 
-  \item 11th Place, ACM International Collegiate Programming Contest Pacific NW Region, November 2017.
 
-  \item 1st Place, Microsoft College Code Competition, September 2017.
+\section{\sc Research Experience}
 
-  \item 1st Place, i-Lab Hackathon, June 2017.
+{\bf University of British Columbia}\\
+\vspace*{-.1in}
+\begin{list1}
+\item[] Gradualizing recursive types, 2018--present
+  \begin{list2}
+  \item[$\circ$] Advisor: Ronald Garcia
+  \end{list2}
+\end{list1}
 
-  \item 6th Place \& Best Award for Creativity and Innovation, Unique Hackday, June 2017.
 
-  \item 2nd Place, HackNanjing, May 2017.
+\section{\sc Teaching Experience}
 
-  \item Outstanding International Student Award, University of British Columbia, February 2017.
+{\bf University of British Columbia}\\
+\vspace*{.05in}
+\emph{Teaching Assistant} \\
+\begin{tabular}{@{\hspace*{0.17in}}p{0.8in}p{4in}}
+  CPSC 121 & Models of Computation, Fall 2018
+\end{tabular}
 
-  \item Top 9 \& InnoSpring Award, HACKxFDU, October 2016.
 
-  \item Silver Medal, International Olympiad in Informatics China Team Selection Competition, May 2015.
+\section{\sc Volunteer Experience}
 
-  \item Bronze Medal, Asia Pacific Informatics Olympiad, May 2015.
+{\bf Shaoxing No.1 High School}\\
+\vspace*{-.1in}
+\begin{list1}
+\item[] Summer Coach (Competitive Programming), 2016
+\item[] Student Lecturer (Competitive Programming), 2013--2015
+\end{list1}
 
-  \item Top 500, Google Code Jam, May 2015.
 
-  \item Top 1000, Microsoft Beauty of Programming Challenge, 2014 \& 2015.
+\section{\sc Honors and Awards}
 
-  \item First Prize, National Olympiad in Informatics in Provinces, 2013 \& 2014.
+\begin{list2}
+\item[$\circ$] Programming Language Implementation Summer School Fellowship (€ 400), 2019
+\item[$\circ$] Science Scholar / Dean's Honour List, University of British Columbia, 2019
+\item[$\circ$] Faculty of Science International Student Scholarship (CAD \$10,000), University of British Columbia, 2018
+\item[$\circ$] Dean of Science Scholarship (CAD \$425), University of British Columbia, 2018
+\item[$\circ$] Trek Excellence Scholarship (CAD \$4,000), University of British Columbia, 2018
+\item[$\circ$] Marie Kendall Memorial Scholarship in Science (CAD \$925), University of British Columbia, 2018
+\item[$\circ$] Joel Harold Marcoe Memorial Scholarship (CAD \$150), University of British Columbia, 2018
+\item[$\circ$] Science Scholar / Dean's Honour List, University of British Columbia, 2018 
+\item[$\circ$] Outstanding International Student Award (CAD \$6,000), University of British Columbia, 2017
+\item[$\circ$] Silver Medal, China Team Selection Completition for International Olympiad in Informatics, China Computer Federation, 2015
+\item[$\circ$] Bronze Medal, Asia Pacific Informatics Olympiad, China Computer Federation, 2015
+\item[$\circ$] First Prize, National Olympiad in Informatics in Provinces (Advanced Division), China Computer Federation, 2014
+\item[$\circ$] First Prize, National Olympiad in Informatics in Provinces (Advanced Division), China Computer Federation, 2013
+\end{list2}
 
-  \item Second Prize, National Olympiad in Informatics in Provinces, 2011 \& 2012.
-\end{itemize}
 
+\section{\sc Selected Coursework}
 
-\section*{Certificates}
+\begin{list2}
+\item[$\circ$] Combinatorial Optimization
+\item[$\circ$] Introduction to Theory of Computing  
+\item[$\circ$] Real Variables
+\item[$\circ$] Definition of Programming Languages
+\item[$\circ$] Introduction to Compiler Construction
+\item[$\circ$] Intermediate Algorithm Design and Analysis 
+\end{list2}
 
-\begin{itemize}
-  \item Programming Ability Test (Advanced), Zhejiang University, Score 100/100, Rank 1/532.\\
-  \emph{The introduction to Programming Ability Test can be found at }\url{https://www.patest.cn/p/articles?id=50}\emph{.}
 
-  \item TOEFL iBT Test, Score 96/120.
+\section{\sc Academic Training}
 
-  \item IELTS Test, Score 7.0/9.0.
+\begin{list2}
+\item[$\circ$] Second Programming Language Implementation Summer School, Bertinoro, Italy, 2019
+\end{list2}
 
-  \item SAT Test, Reading 600/800, Mathematics 800/800, Writing 720/800, Essay 11/12.
 
-  \item Advanced Placement Exams, Calculus BC 5/5, Statistics 5/5, Computer Science A 5/5.
+\section{\sc Relevant Skills}
 
-  \item Certificate of Arts Grade Examination of China, Violin, Grade 10.
-\end{itemize}
+\begin{tabular}{@{}p{0.8in}p{4.25in}}
 
+Languages:& English, Mandarin \\
+Programming:& \LaTeX, Racket, Standard ML, JavaScript, C/C++, Java, C\#, Python, Ruby, MATLAB, Go, MySQL
 
-\section*{Experience}
+\end{tabular}
 
-\begin{itemize}
-  \item Summer Coach of Olympiad in Informatics, Shaoxing No. 1 High School, July 2016.
 
-  \item Private English Tutor, February 2016.
+\section{\sc Last Updated}
+\today
 
-  \item Propositional Person of ACM-ICPC Multi-University Training Contests, Hangzhou Dianzi University Online Judge System, 2014.
 
-  \item Student Lecturer of Olympiad in Informatics, Shaoxing No. 1 High School, 2013--2016.
- 
-  \item Propositional Person of Olympiad in Informatics Training Contests, Shaoxing No. 1 High School, 2013--2016.
-\end{itemize}
-
-
-\section*{Press Coverage}
-
-\begin{itemize}
-  \item Students' 24-hour hackathon to pioneer their invention, Shanghai Daily, August 2017. \\
-  \emph{Available at }\url{http://www.shanghaidaily.com/district/pudong/Students-24hour-hackathon-to-pioneer-their-invention/shdaily.shtml}\emph{.}
-
-  \item hack.init() 2017 International Hackathon, TechNode, August 2017. \\
-  \emph{Available at }\url{http://cn.technode.com/hack-init2017/}\emph{.}
-\end{itemize}
-
-
-\section*{Community Service}
-
-\begin{itemize}
-  \item Volunteer Guide, Shaoxing Luxun Native Place, July--August 2015.
-
-  \item Volunteer at the Radiological Department, Shaoxing People's Hospital, July--August 2014.
-
-  \item Volunteer of Emergency Medical Treatment, Shaoxing People's Hospital, July--August 2013.
-
-\end{itemize}
-
-
-\section*{Languages}
-
-\begin{itemize}
-  \item C, C++, Java, Python, Ruby, Pascal, Matlab, Octave, Racket, Scheme, Standard ML, Go, JavaScript, MySQL, HTML, \LaTeX.
-  \item Chinese (Mandarin), English.
-\end{itemize}
-
-
-\section*{Skills}
-
-\begin{itemize}
-  \item Full-Stack Web Development: Django, Flask, Tornado, Go, Microservices, HTML/CSS, JavaScript, Bootstrap, Vue.js, AngularJS, D3.js, MySQL, Node.js, Marko.js, Web Design.
-
-  \item App Development: Ionic, Delphi.
-
-  \item Infrastructure: Nginx, Redis, Docker, Unix/Linux.
-
-  \item Other: Team Leadership, Corporate Relations, Marketing, Public Relations.
-\end{itemize}
-
-\section*{Courses}
-
-\begin{itemize}
-  \item Differential Calculus (Honours, MATH 120), University of British Columbia\\
-  \emph{Completed the course with a final grade of $98\%$.}
-
-  \item Enriched Physics I (Honours, mechanics, PHYS 107), University of British Columbia\\
-  \emph{Completed the course with a final grade of $93\%$.}
-
-  \item Models of Computation (CPSC 121), University of British Columbia\\
-  \emph{Completed the course with a final grade of $98\%$.}
-
-  \item Computation, Programs, and Programming (CPSC 110), University of British Columbia\\
-  \emph{Challenged the course with a final grade of $94\%$.}
-
-  \item Programming Languages (Part C), University of Washington, Coursera.\\
-  \emph{Completed the course with a final grade of $99.3\%$.}
-
-  \item Programming Languages (Part B), University of Washington, Coursera.\\
-  \emph{Completed the course with a final grade of $99.6\%$.}
-
-  \item Programming Languages (Part A), University of Washington, Coursera.\\
-  \emph{Completed the course with a final grade of $98.6\%$.}
-
-  \item Machine Learning, Stanford University, Coursera.\\
-  \emph{Completed the course with a final grade of $100.0\%$.}
-\end{itemize}
-
-
-\bigskip
-
-% Footer
-%\begin{center}
-%  \begin{footnotesize}
-%    Last updated: \today \\
-%    %\href{\footerlink}{\texttt{\footerlink}}
-%  \end{footnotesize}
-%\end{center}
+\end{resume}
 
 \end{document}
