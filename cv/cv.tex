@@ -41,6 +41,12 @@
       \setlength{\parsep}{0in} \setlength{\parskip}{0in}
       \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
       \setlength{\leftmargin}{0.2in}}}{\end{list}}
+\newenvironment{list3}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0.05in}
+      \setlength{\parsep}{0.025in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
 
 
 \begin{document}
@@ -163,17 +169,29 @@ Algorithms, combinatorics, optimization, theoretical computer science -- especia
 
 {\bf University of British Columbia}\\
 \vspace*{-.1in}
-\begin{list1}
-\item[] The minimum-cost congestion of single-sink unsplittable flows (thesis), 2020--2021
+\begin{list3}
+\item[] Optimization problems on network flows with side constraints (thesis), 2020--2021
   \begin{list2}
   \item[$\circ$] Advisor: F.\ Bruce Shepherd
-  %\item[$\circ$] Documents: [\href{http://ypan.me/docs/thesis-proposal.pdf}{Proposal}]
+  \item[$\circ$] Studied several optimization problems on network flows with side constraints (i.e., unsplittable, confluent, and $d$-furcated flows), including the \emph{minimum congestion}, \emph{maximum routable demands}, and \emph{minimum number of rounds} problems.
+  \item[$\circ$] Studied several classical algorithms on these optimization problems, including
+  \begin{itemize}
+    \item the $2$-approximation algorithm for the \emph{minimum congestion} problem on single-sink unsplittable flows by Dinitz et al.\ (1999),
+    \item the $O(1 + \log k)$-approximation algorithm for the \emph{minimum congestion} problem on confluent flows by Chen et al.\ (2004),
+    \item the $3$-approximation algorithm for the \emph{maximum demands} problem on confluent flows by Chen et al.\ (2004), and
+    \item the $(1 + \frac{1}{d - 1})$-approximation algorithm for the \emph{minimum congestion} problem on $d$-furcated flows with $d \geq 2$ by Donovan et al.\ (2007).
+  \end{itemize}
+  \item[$\circ$] Studied several open questions relevant to these optimization problems, including Michel Goemans' $2$-congestion conjecture for the cost version of the \emph{minimum congestion} problem on single-sink unsplittable flows, $O(1)$-congestion for bifurcated flows, and $O(1)$ confluent rounds to route all demands.
+  \item[$\circ$] Documents: [\href{http://ypan.me/docs/thesis-proposal.pdf}{Proposal}]
   \end{list2}
-\item[] Gradual typing of recursive types, 2018--2020
+\item[] Gradual typing of recursive types, 2019--2020
   \begin{list2}
   \item[$\circ$] Advisor: Ronald Garcia
+  \item[$\circ$] Applied the \emph{Abstract Gradual Typing (AGT)} approach, based upon abstract interpretation, to iso-recursive and equi-recursive types to obtain static and dynamic semantics for \emph{gradual typing} in terms of pre-existing static types, which enables programming languages to seamlessly combine dynamic and static checking. In particular, the dynamic semantics of the gradual language are induced from an internal runtime language whose terms represent corresponding source gradual typing derivations.
+  \item[$\circ$] Proved that the gradual language with recursive types induced by the AGT approach satisfies the refined criteria for gradual typing of Siek et al.\ (2015), including type safety, static guarantee and dynamic guarantee.
+  \item[$\circ$] Wrote a tutorial that demonstrates the AGT approach on a toy language BA (Boolean and Arithmetic Language), which produces TBA, GBA and MBA (Typed/Gradual/Mixed Boolean and Arithmetic Language, respectively).
   \end{list2}
-\end{list1}
+\end{list3}
 
 
 \section{\sc Teaching Experience}
