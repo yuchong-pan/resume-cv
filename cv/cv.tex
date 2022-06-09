@@ -15,6 +15,7 @@
 \usepackage{enumitem}
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
+\usepackage{amsmath, amssymb, amsfonts}
 
 
 \pagestyle{fancy}
@@ -234,6 +235,10 @@ Algorithms, combinatorics, optimization, theoretical computer science, operation
 %-----------Reseach Experience-----
 \section{Research/Directed Reading Experience}
   \resumeSubHeadingListStart
+    \researchExperience{The Discrete Newton's Algorithm for a Submodular Line Search Problem}{June 2021 -- present}
+    \resumeItemListStart
+      \researchItem{An ongoing research project on the analysis of the discrete Newton's algorithm for a submodular line search problem $\delta^* = \max\{ \delta \geq 0 : \min_{S \subset V} (f(S) - \delta a(S)) \geq 0 \}$, where $f : 2^V \to \mathbb{R}_+$ is a non-negative submodular set function on a ground set $V$, and $a : 2^V \to \mathbb R$ is a modular function on $V$. Collaborating with two undergraduate students as part of the Extended Summer Program in Undergraduate Research (SPUR+).}
+    \resumeItemListEnd
     \researchExperience
     {Directed Reading on the Traveling Salesman Problem}{September 2021 -- present}
     \resumeItemListStart
@@ -263,7 +268,7 @@ Algorithms, combinatorics, optimization, theoretical computer science, operation
       \resumeItemListStart
         \resumeItem{CPSC 420 Advanced Algorithms Design and Analysis}{Spring 2021}
         \resumeItem{CPSC 311 Definition of Programming Languages}{Fall 2020}
-        \resumeItem{CPSC 421/501 Introduction to Theory of Computing (graduate-level)}{Fall 2019}
+        \resumeItem{CPSC 421/501 Introduction to Theory of Computing (graduate level)}{Fall 2019}
         \resumeItem{CPSC 121 Models of Computation}{Fall 2018}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
@@ -271,6 +276,12 @@ Algorithms, combinatorics, optimization, theoretical computer science, operation
 %-----------Mentoring Experience---
 \section{Mentoring Experience}
 \resumeSubHeadingListStart
+  \resumeSubheading
+    {Massachusetts Institute of Technology}{Cambridge, MA}
+    {Extended Summer Program in Undergraduate Research (Department of Mathematics)}{June 2022 -- August 2022}
+    \resumeItemListStart
+      \researchItem{Mentoring two undergraduate students to perform a research project on the analysis of the discrete Newton's algorithm for a submodular line search problem $\delta^* = \max\{ \delta \geq 0 : \min_{S \subset V} (f(S) - \delta a(S)) \geq 0 \}$, where $f : 2^V \to \mathbb{R}_+$ is a non-negative submodular set function on a ground set $V$, and $a : 2^V \to \mathbb R$ is a modular function on $V$.}
+    \resumeItemListEnd
   \resumeSubheading
     {Massachusetts Institute of Technology}{Cambridge, MA}
     {Directed Reading Program (Department of Mathematics)}{January 2022 -- February 2022}
@@ -291,6 +302,7 @@ Algorithms, combinatorics, optimization, theoretical computer science, operation
 \vspace{-5pt}
 \section{Talks and Presentations}
 \resumeSubHeadingListStart
+  \manuscriptItem{Randomization in Recent Progress on Traveling Salesman Problem. MIT 6.842 project. Massachusetts Institute of Technology. Cambridge, MA. 2022. [\href{https://ypan.me/docs/tsp-slides.pdf}{Slides}]}
   \manuscriptItem{\emph{Roundtrip Spanners and Roundtrip Routing in Directed Graphs} by Roditty, Thorup, and Zwick (2008). MIT 6.890 project. Massachusetts Institute of Technology.
   Cambridge, MA. 2021. [\href{https://ypan.me/docs/roundtrip-slides.pdf}{Slides}]}
   \manuscriptItem{On the Sensitivity of Boolean Functions. UBC CPSC 531F project. University of
